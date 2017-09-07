@@ -33,6 +33,11 @@ PACKAGES+=" scons"
 PACKAGES+=" texinfo"
 PACKAGES+=" xmlto"
 PACKAGES+=" xutils-dev" # Provides 'makedepend' which the openssl build uses.
+PACKAGES+=" ruby-dev" # Needed by metasploit
+PACKAGES+=" libpq-dev" # Needed by metasploit
+PACKAGES+=" libpcap-dev" # Needed by metasploit
+PACKAGES+=" build-essential" # Needed by metasploit
+PACKAGES+=" libsqlite3-dev" # Needed by metasploit
 
 DEBIAN_FRONTEND=noninteractive sudo apt-get install -yq $PACKAGES
 
